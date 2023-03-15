@@ -1,0 +1,55 @@
+.board{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row:first-child .ceil{/*每行的第一个*/
+  border: none;
+}
+.col:first-child .ceil{/*每列的第一个*/
+  border: none;
+}
+.ceil{
+  border: 1px solid rgb(131, 130, 130);
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+}
+.click{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  z-index: 12;
+  margin-right: -10px;
+  margin-bottom: -10px;
+
+}
+.black{
+  z-index: 99;
+  margin-right: -10px;
+  margin-bottom: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #333333;
+  box-shadow: 0px 2px 5px 2px #eee;
+}
+.white{
+  z-index: 99;
+  margin-right: -10px;
+  margin-bottom: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 2px rgb(226, 226, 226);
+}
+
+.btn{
+  margin:50px 50px 0px;
+
+}
